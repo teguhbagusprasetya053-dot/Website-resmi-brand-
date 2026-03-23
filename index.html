@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TEGUH TECH - HP GACOR</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: gold;
+      background: linear-gradient(135deg, #000000, #1a0000, #330000);
+      background-attachment: fixed;
+    }
+
+    header {
+      background: linear-gradient(90deg, black, maroon);
+      padding: 25px;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border-bottom: 2px solid gold;
+      text-shadow: 0 0 10px red;
+      animation: glow 2s infinite;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px red; }
+      50% { text-shadow: 0 0 20px red; }
+      100% { text-shadow: 0 0 5px red; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .box {
+      margin: 20px;
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid gold;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+      animation: fadeUp 1s ease forwards;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px red;
+    }
+
+    a {
+      display: block;
+      margin: 12px auto;
+      padding: 14px;
+      width: 80%;
+      max-width: 320px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      border-radius: 12px;
+      background: linear-gradient(45deg, #8B0000, red);
+      border: 1px solid gold;
+      box-shadow: 0 0 10px red;
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px red;
+    }
+
+    a:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 5px red;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background: rgba(255,255,255,0.2);
+      transition: 0.3s;
+    }
+
+    a:hover::after {
+      left: 0;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    🔥 TEGUH TECH - HP GACOR 🔥
+  </header>
+
+  <div class="box">
+    <h2>⚠️ PERHATIAN ⚠️</h2>
+    <p><b>JANGAN BELI HP SEMBARANGAN!</b></p>
+    <p>Spek tinggi ≠ performa nyata 😤</p>
+    <p><b>Banyak jebakan marketing di luar sana 🗿</b></p>
+  </div>
+
+  <div class="box">
+    <h2>📊 TIPS CEPAT BIAR GA ZONK</h2>
+    <p>✔️ Cek chipset, bukan cuma RAM</p>
+    <p>✔️ Lihat review real, bukan iklan</p>
+    <p>✔️ Jangan tergiur harga murah ekstrem 💀</p>
+  </div>
+
+  <div class="box">
+    <h2>🎥 REFERENSI WAJIB</h2>
+    <a href="https://www.youtube.com/channel/UC1dI4tO13ApuSX0QeX8pHng">📱 GadgetIn</a>
+    <a href="https://www.youtube.com/@sobat_hape">📱 Sobat HAPE</a>
+    <a href="https://www.youtube.com/@JagatReview">📱 Jagat Review</a>
+  </div>
+
+  <div class="box">
+    <h2>🌐 WEBSITE RESMI BRAND</h2>
+
+    <a href="https://www.samsung.com/id/">📱 Samsung</a>
+    <a href="https://www.mi.co.id/">🔥 Xiaomi</a>
+    <a href="https://www.oppo.com/id/">📱 OPPO</a>
+    <a href="https://www.vivo.com/id/">📱 Vivo</a>
+    <a href="https://www.realme.com/id/">📱 Realme</a>
+    <a href="https://www.apple.com/id/">🍎 Apple</a>
+
+    <a href="https://www.po.co/global/">⚡ POCO</a>
+    <a href="https://www.infinixmobility.com/id/">⚡ Infinix</a>
+    <a href="https://www.tecno-mobile.com/id/">⚡ Tecno</a>
+    <a href="https://www.itelmobile.com/id/">⚡ Itel</a>
+
+    <a href="https://www.advan.id/">🇮🇩 Advan</a>
+  </div>
+
+  <footer>
+    #fullsenyumsayang 😎 | Teguh Tech
+  </footer>
+
+  <audio id="clickSound" src="https://www.myinstants.com/media/sounds/mouse-click.mp3"></audio>
+
+  <script>
+    const links = document.querySelectorAll("a");
+    const sound = document.getElementById("clickSound");
+
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        sound.currentTime = 0;
+        sound.play();
+      });
+    });
+  </script>
+
+</body>
+</html>
